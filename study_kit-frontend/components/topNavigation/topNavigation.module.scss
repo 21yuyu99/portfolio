@@ -1,0 +1,28 @@
+.top{
+  height: 6.8vh;
+  display: flex;
+  align-items: center;
+  .topLeftContainer{
+  width: 15%;
+  }
+ .topTitle{
+  width: 75%;
+  text-align: center;
+  font-size:12pt;
+ }
+  .icon{
+    width: 15%;
+    text-align: center;
+    line-height: 1;
+    svg{
+      vertical-align:bottom;
+    }
+  }
+  .back{
+    a{
+      padding: 10px;
+    }
+    width: 15%;
+    text-align: center;
+  }
+ }

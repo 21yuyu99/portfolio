@@ -1,0 +1,126 @@
+.main{
+  min-height: 100%;
+  padding-top:10px;
+  padding-bottom:20%;
+  background-color: #F3F3F3;
+}
+.banner{
+  width: 90%;
+  border-radius: 16px;
+  background-color: #DFB144;
+  color: white;
+  margin:auto;
+  padding:15px;
+  display: flex;
+  .bannerText{
+    width:80%;
+  }
+  .bannerTitle{
+    h3{
+      font-size: 13pt;
+      padding:2px 0;
+    }
+  }
+  p{
+    margin-top: 5px;
+    font-size: 10pt;
+    @media (max-width: 340px) {
+      font-size: 9pt;
+    }
+    a{
+      color: white;
+    }
+  }
+  .pencil{
+    font-size: 2rem;
+  }
+
+}
+.searchBox{
+  position: relative;
+  width: 90%;
+  margin:auto;
+  margin-top:15px;
+  input {
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    padding: 10px 12px;
+    font-size: 12pt;
+  }
+  .searchButton{
+    position : absolute;
+    width: 30px;
+    height: 20px;
+    top: 7px;
+    right: 7px;
+    border: none;
+    background-color: white
+  }
+}
+.studyTypeBar{
+  width:90%;
+  margin:auto;
+  margin-top:15px;
+  text-align: center;
+  font-size: 12pt;
+  color:#4D4D4D;
+  overflow-x: auto;
+  white-space: nowrap;
+  .studyType{
+    display: inline-block;
+    border: 1px solid #DBDBDB;
+    border-radius: 16px;
+    padding:10px;
+    margin-right:3%;
+    &:last-child{
+      margin-right: 0px;
+    }
+  } 
+}
+.a{
+  display: block;
+  margin: auto;
+  width: 90%;
+  border-radius: 16px;
+}
+.createStudyContainer{
+  border-radius: 16px;
+  background-color: #E0E0E0;
+  margin:auto;
+  padding:15px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  .createStudyText{
+    width: 92%;
+    padding-left: 15px;
+    .createStudyTitle{
+      h3{
+        font-size: 13pt;
+        padding:2px 0;
+        color:black;
+      }
+    }
+    p{
+      margin-top: 5px;
+      font-size: 10pt;
+      color : #7E8489;
+      @media (max-width: 340px) {
+        font-size: 9pt;
+      }
+    }
+  }
+}
+.noSearchResult{
+  text-align: center;
+  background-color: #F3F3F3;
+  padding: 30px 0;
+  font-size: 10pt;
+}
+.msgContainer{
+  position:fixed;
+  bottom:12%;
+  left:0;
+  right: 0;
+}

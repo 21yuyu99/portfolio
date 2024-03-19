@@ -1,0 +1,87 @@
+.studyCard{
+  width: 95%;
+  border-radius: 16px 0px 0px 16px / 16px 0px 0px 16px;
+  background-color: white;
+  color: black;
+  margin-left: 5%;
+  margin-top: 3%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .languageOther, .certificate, .employment, .project{
+    height: 20px;
+    font-size: 10pt;
+    font-weight: bold;
+  }
+  .languageOther{
+    color: #0091FF;
+  }
+  .certificate{
+    color: #DFB144;
+  }
+  .employment{
+    color: #C94E38;
+  }
+  .project{
+    color: #0091FF;
+  }
+  .cardTag{
+    width: 75%;
+    height: 20px;
+    padding-left: 7px;
+    font-size: 10pt;
+    color: #9E9E9E;
+  }
+  @each $bool in true, false{
+    .star_#{$bool}{
+      margin-left: auto;
+      height: 23px;
+      text-align: right;
+      right: 0;
+    }
+    .star_true{
+      color: #0091FF;
+    }
+    .star_false{
+      color : #7E8489;
+    }
+  }
+  .cardContent{
+    width: 100%;
+    .cardTitle{
+      h3{
+        color: black;
+        font-size: 13pt;
+        padding-top: 5px;
+        padding-bottom: 7px;
+      }
+    }
+    p{
+      font-size: 10pt;
+      height: 20px;
+      color: #6A6A8B
+    }  
+  }
+  .progressBar{
+    position: relative;
+    display: inline-block;
+    background: #DCDCDC;
+    height: 7px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .blueBar, .grayBar{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 6px;
+  }
+  .blueBar{
+    background: #0091FF;
+  }
+  .grayBar{
+    background: #7E8489;
+  }
+}
